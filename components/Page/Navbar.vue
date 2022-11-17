@@ -18,6 +18,7 @@ const menus = computed((): IMenuItem[] => [
   { type: 'link', text: t('pages.test.nav'), route: { name: 'test' } },
   { type: 'link', text: t('pages.post.nav'), route: { name: 'post' } },
   { type: 'link', text: t('pages.setting.nav'), route: { name: 'setting' } },
+  { type: 'link', text: t('pages.setting.mypage'), route: { name: 'mypage' } },
   {
     type: 'button',
     text: t('pages.dashboard.nav'),
@@ -78,7 +79,7 @@ const menus = computed((): IMenuItem[] => [
             href="https://github.com/viandwi24/nuxt3-awesome-starter"
             title="Github"
           >
-            <IconMdi:github-face />
+            <!--            <IconMdi:github-face />-->
           </Anchor>
         </div>
       </div>
@@ -134,7 +135,7 @@ const menus = computed((): IMenuItem[] => [
           title="Github"
           href="https://github.com/viandwi24/nuxt3-awesome-starter"
         >
-          <IconMdi:github-face />
+          <!--          <IconMdi:github-face />-->
           <span class="ml-1">Github</span>
         </Button>
         <Button
