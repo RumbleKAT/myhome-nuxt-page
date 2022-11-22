@@ -24,6 +24,20 @@ useHead(() => ({
 //   () => `https://api.github.com/search/users?q=zero86&per_page=50`
 // )
 // console.log(data)
+
+const datas = JSON.stringify([10, 19, 3, 5, 2, 3])
+const labels = JSON.stringify([
+  'red',
+  'blue',
+  'yellow',
+  'green',
+  'purple',
+  'orange',
+])
+const title = 'myTitle'
+const chart_url = 'https://rumblekat.github.io/chart-vanilla/'
+
+const url = `${chart_url}?label=${labels}&datas=${datas}&title=${title}`
 </script>
 
 <template>
@@ -36,20 +50,28 @@ useHead(() => ({
         <h1>About Page</h1>
         <!--        {{ data }}-->
         <button @click="clickMe">click me</button>
-        <div class="chart">
-          <div class="bars">
-            <div class="bar" style="height: 50%"></div>
-            <div class="bar" style="height: 20%"></div>
-            <div class="bar" style="height: 70%"></div>
-            <!-- etc -->
-          </div>
-          <div class="labels">
-            <span class="label">Bar 1</span>
-            <span class="label">Bar 2</span>
-            <span class="label">Bar 3</span>
-            <!-- etc -->
-          </div>
-        </div>
+        <iframe
+          id="inlineFrameExample"
+          title="Inline Frame Example"
+          width="500"
+          height="500"
+          :src="url"
+        >
+        </iframe>
+        <!--        <div class="chart">-->
+        <!--          <div class="bars">-->
+        <!--            <div class="bar" style="height: 50%"></div>-->
+        <!--            <div class="bar" style="height: 20%"></div>-->
+        <!--            <div class="bar" style="height: 70%"></div>-->
+        <!--            &lt;!&ndash; etc &ndash;&gt;-->
+        <!--          </div>-->
+        <!--          <div class="labels">-->
+        <!--            <span class="label">Bar 1</span>-->
+        <!--            <span class="label">Bar 2</span>-->
+        <!--            <span class="label">Bar 3</span>-->
+        <!--            &lt;!&ndash; etc &ndash;&gt;-->
+        <!--          </div>-->
+        <!--        </div>-->
       </PageSection>
     </PageBody>
   </PageWrapper>
