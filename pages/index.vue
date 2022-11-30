@@ -49,16 +49,16 @@ const copyBash = () => {
 <template>
   <PageWrapper class="flex-1 flex">
     <div class="background-overlay">
-      <div
-        class="absolute top-0 left-0 transform translate-x-64 translate-y-4 h-14 w-14 rounded-full bg-gray-900 dark:bg-white"
-      ></div>
-      <div
-        class="absolute hidden md:block top-0 left-0 transform translate-x-18 translate-y-20 h-28 w-28 rounded-full bg-blue-600 linear-wipe"
-      ></div>
-      <div
-        class="absolute hidden md:block bottom-0 right-0 transform -translate-x-4 -translate-y-40 h-16 w-16 rounded bg-purple-600 linear-wipe"
-      ></div>
-      <div class="absolute bottom-0 right-0 triangle-shape"></div>
+      <!--      <div-->
+      <!--        class="absolute top-0 left-0 transform translate-x-64 translate-y-4 h-14 w-14 rounded-full bg-gray-900 dark:bg-white"-->
+      <!--      ></div>-->
+      <!--      <div-->
+      <!--        class="absolute hidden md:block top-0 left-0 transform translate-x-18 translate-y-20 h-28 w-28 rounded-full bg-blue-600 linear-wipe"-->
+      <!--      ></div>-->
+      <!--      <div-->
+      <!--        class="absolute hidden md:block bottom-0 right-0 transform -translate-x-4 -translate-y-40 h-16 w-16 rounded bg-purple-600 linear-wipe"-->
+      <!--      ></div>-->
+      <!--      <div class="absolute bottom-0 right-0 triangle-shape"></div>-->
     </div>
     <PageBody class="flex-1 flex">
       <PageSection class="flex-1 flex items-center">
@@ -96,38 +96,38 @@ const copyBash = () => {
           </div>
         </div>
         <div class="hidden md:flex md:w-3/8 justify-center items-end relative">
-          <Gem class="absolute -top-64 -right-0" />
-          <div class="ml-4 w-100 z-10 h-auto shadow">
-            <div
-              class="win-header bg-gray-200 dark:bg-slate-800 flex flex space-x-4 px-3 py-2 rounded-t-lg relative border-b-2 border-gray-300/75 dark:border-slate-700/75"
-            >
-              <div class="win-controls flex space-x-1 items-center">
-                <div class="w-3 h-3 bg-red-500 rounded-full" />
-                <div class="w-3 h-3 bg-green-500 rounded-full" />
-                <div class="w-3 h-3 bg-yellow-500 rounded-full" />
-              </div>
-              <div class="flex-1 font-bold text-center pr-12 text-sm">BASH</div>
-              <div class="text-sm flex justify-center items-center">
-                <div class="tooltip">
-                  <button
-                    class="text-gray-100 flex justify-center items-center"
-                    @click="copyBash"
-                    @mouseout="cancelTooltip"
-                  >
-                    <span class="tooltiptext">Copy to clipboard</span>
-                    <icon-material-symbols:content-copy-outline />
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div
-              class="win-body rounded-b-lg bg-gray-200/90 dark:bg-slate-800/90 px-3 py-2 font-mono backdrop-filter backdrop-blur-lg"
-            >
-              <div>
-                $ git clone https://github.com/viandwi24/nuxt3-awesome-starter
-              </div>
-            </div>
-          </div>
+          <!--          <Gem class="absolute -top-64 -right-0" />-->
+          <!--          <div class="ml-4 w-100 z-10 h-auto shadow">-->
+          <!--            <div-->
+          <!--              class="win-header bg-gray-200 dark:bg-slate-800 flex flex space-x-4 px-3 py-2 rounded-t-lg relative border-b-2 border-gray-300/75 dark:border-slate-700/75"-->
+          <!--            >-->
+          <!--              <div class="win-controls flex space-x-1 items-center">-->
+          <!--                <div class="w-3 h-3 bg-red-500 rounded-full" />-->
+          <!--                <div class="w-3 h-3 bg-green-500 rounded-full" />-->
+          <!--                <div class="w-3 h-3 bg-yellow-500 rounded-full" />-->
+          <!--              </div>-->
+          <!--              <div class="flex-1 font-bold text-center pr-12 text-sm">BASH</div>-->
+          <!--              <div class="text-sm flex justify-center items-center">-->
+          <!--                <div class="tooltip">-->
+          <!--                  <button-->
+          <!--                    class="text-gray-100 flex justify-center items-center"-->
+          <!--                    @click="copyBash"-->
+          <!--                    @mouseout="cancelTooltip"-->
+          <!--                  >-->
+          <!--                    <span class="tooltiptext">Copy to clipboard</span>-->
+          <!--                    <icon-material-symbols:content-copy-outline />-->
+          <!--                  </button>-->
+          <!--                </div>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--            <div-->
+          <!--              class="win-body rounded-b-lg bg-gray-200/90 dark:bg-slate-800/90 px-3 py-2 font-mono backdrop-filter backdrop-blur-lg"-->
+          <!--            >-->
+          <!--              <div>-->
+          <!--                $ git clone https://github.com/viandwi24/nuxt3-awesome-starter-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--          </div>-->
         </div>
       </PageSection>
     </PageBody>

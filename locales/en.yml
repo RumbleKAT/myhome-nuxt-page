@@ -33,6 +33,7 @@ pages:
     title: getting started
     description: this is a getting started page
   setting:
+    mypage: my-page
     nav: setting
     title: setting
     description: this is a setting page
