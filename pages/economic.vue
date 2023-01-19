@@ -22,9 +22,9 @@ useHead(() => ({
 const news = useNews();
 await news.getNews();
 const current_news = news.getData;
-current_news.googleNews.items = current_news.googleNews.items.sort((a:any,b:any)=>{
-  return new Date(b.pubDate) - new Date(a.pubDate)
-})
+// current_news.googleNews.items = current_news.googleNews.items.sort((a:any,b:any)=>{
+//   return new Date(b.pubDate) - new Date(a.pubDate)
+// })
 
 </script>
 
