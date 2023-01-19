@@ -28,6 +28,10 @@ pages:
     reset: reset
     identity: identity
     full_name: fullName
+  economic:
+    nav: economic news
+    title: economic news
+    description: latest news of economic
   getting-started:
     nav: getting started
     title: getting started
@@ -67,7 +71,7 @@ pages:
 banners:
   welcome: hello, welcome to %{app_name}!
 others:
-  learn_more: learn more
+  see_more: see more
   copy: copy
   enabled: enabled
   disabled: disabled

@@ -11,8 +11,8 @@ const app = useAppConfig()
 const menus = computed((): IMenuItem[] => [
   {
     type: 'link',
-    text: t('pages.getting-started.nav'),
-    route: { name: 'getting-started' },
+    text: t('pages.economic.nav'),
+    route: { name: 'economic' },
   },
   { type: 'link', text: t('pages.blank.nav'), route: { name: 'blank' } },
   { type: 'link', text: t('pages.test.nav'), route: { name: 'test' } },

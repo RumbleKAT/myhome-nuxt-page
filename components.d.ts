@@ -17,6 +17,7 @@ declare module '@vue/runtime-core' {
     'IconMaterialSymbols:contentCopyOutline': typeof import('~icons/material-symbols/content-copy-outline')['default']
     'IconMdi:checkCircle': typeof import('~icons/mdi/check-circle')['default']
     'IconMdi:githubFace': typeof import('~icons/mdi/github-face')['default']
+    'IconMdi:newspaperVariant': typeof import('~icons/mdi/newspaper-variant')['default']
     'IconSimpleIcons:nuxtdotjs': typeof import('~icons/simple-icons/nuxtdotjs')['default']
     'IconUil:angleDown': typeof import('~icons/uil/angle-down')['default']
     'IconUil:apps': typeof import('~icons/uil/apps')['default']

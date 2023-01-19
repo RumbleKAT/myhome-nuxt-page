@@ -36,7 +36,7 @@ useHead(() => ({
                 class="text-sm flex items-center justify-end space-x-1"
                 :href="`https://www.github.com/${article.author}`"
               >
-                <icon-mdi:github-face class="text-xs" />
+                <icon-mdi:newspaper-variant class="text-xs" />
                 <span>{{ article.author }}</span>
               </Anchor>
             </div>
