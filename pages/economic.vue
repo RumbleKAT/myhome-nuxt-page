@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { capitalize } from '~/utils/str'
-import {useNews} from "~/stores/news";
+import Parser from 'rss-parser';
+const parser = new Parser();
 
 // composable
 const { t } = useLang()
@@ -19,11 +20,19 @@ useHead(() => ({
   ],
 }))
 
-const news = useNews();
-console.log("fetch data!");
-await news.getNews();
-const current_news = news.getData["googleNews"];
-console.log(current_news);
+const economic_url = "https://news.google.com/rss/search?q=%EB%B6%80%EB%8F%99%EC%82%B0&hl=ko&gl=KR&ceid=KR:ko.xml"
+const investing_url = "https://kr.investing.com/rss/news_285.rss"
+
+const [googleNews, investingNews] = await Promise.all([
+  parser.parseURL(economic_url),
+  parser.parseURL(investing_url)
+]);
+
+
+console.log(googleNews);
+console.log(investingNews);
+
+const current_news = googleNews;
 // current_news.googleNews.items = current_news.googleNews.items.sort((a:any,b:any)=>{
 //   return new Date(b.pubDate) - new Date(a.pubDate)
 // })
