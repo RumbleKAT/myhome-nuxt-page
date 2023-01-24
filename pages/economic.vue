@@ -28,11 +28,11 @@ const [googleNews, investingNews] = await Promise.all([
   parser.parseURL(investing_url)
 ]);
 
-
 console.log(googleNews);
 console.log(investingNews);
 
-const current_news = googleNews;
+const current_news:any = googleNews;
+
 // current_news.googleNews.items = current_news.googleNews.items.sort((a:any,b:any)=>{
 //   return new Date(b.pubDate) - new Date(a.pubDate)
 // })
