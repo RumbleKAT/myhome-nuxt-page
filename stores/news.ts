@@ -5,7 +5,8 @@ export interface INewsState {
 }
 
 // google economic news
-const economic_url = "./api/news"
+// @ts-ignore
+const economic_url:any = `${process.env.URL}/api/news`
 
 export const useNews = defineStore('news', {
     state: (): INewsState => ({
@@ -18,6 +19,7 @@ export const useNews = defineStore('news', {
                 if (response.status !== 200)
                     throw new Error(`error when fetching news`)
                 this.data = await response.json();
+                console.log(this.data);
             }catch(e){
                 console.log(`[ERROR] ${e}`)
             }
