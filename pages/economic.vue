@@ -33,9 +33,9 @@ console.log(investingNews);
 
 const current_news:any = googleNews;
 
-// current_news.googleNews.items = current_news.googleNews.items.sort((a:any,b:any)=>{
-//   return new Date(b.pubDate) - new Date(a.pubDate)
-// })
+current_news.items = current_news.items.sort((a:any,b:any)=> {
+  return new Date(b.pubDate).valueOf() - new Date(a.pubDate).valueOf();
+});
 
 </script>
 
