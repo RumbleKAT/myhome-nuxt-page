@@ -10,5 +10,8 @@ export default defineEventHandler(async ()=>{
         parser.parseURL(investing_url)
     ]);
 
+    console.log(googleNews);
+    console.log(investingNews);
+
     return {"googleNews" :  googleNews ,"investingNews" : investingNews};
 });

@@ -20,8 +20,10 @@ useHead(() => ({
 }))
 
 const news = useNews();
+console.log("fetch data!");
 await news.getNews();
-const current_news = news.getData;
+const current_news = news.getData["googleNews"];
+console.log(current_news);
 // current_news.googleNews.items = current_news.googleNews.items.sort((a:any,b:any)=>{
 //   return new Date(b.pubDate) - new Date(a.pubDate)
 // })
@@ -35,7 +37,7 @@ const current_news = news.getData;
     </PageHeader>
     <PageBody>
       <ContentList>
-        <PageSection v-for="article in current_news.googleNews.items" :key="article.guid">
+        <PageSection v-for="article in current_news.items" :key="article.guid">
           <div
               class="block hover:no-underline p-6 flex space-x-6 rounded border border-gray-900/10 dark:border-gray-50/[0.2]"
           >

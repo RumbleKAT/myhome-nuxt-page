@@ -14,9 +14,7 @@ export const useNews = defineStore('news', {
     actions: {
         async getNews() {
             try{
-                const response = await fetch(
-                    `./api/news`
-                )
+                const response = await fetch(economic_url)
                 if (response.status !== 200)
                     throw new Error(`error when fetching news`)
                 this.data = await response.json();
